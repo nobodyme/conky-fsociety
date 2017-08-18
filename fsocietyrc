@@ -15,13 +15,14 @@
 
  #Window specifications
    own_window yes
-   own_window_type conky
+   own_window_class Conky
+   own_window_type desktop
    own_window_argb_visual yes
    own_window_argb_value 225
    own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
    border_inner_margin 50
-   border_outer_margin
+  #border_outer_margin
    own_window_transparent yes
    own_window_colour black
    minimum_size 400 700
