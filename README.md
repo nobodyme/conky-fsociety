@@ -17,8 +17,8 @@
   
 ### Uninstallation
 
-	- cd into the repository, if you're not
-	- Run the uninstall script: `./uninstall.sh`.This should remove the `~/.conky/` directory.
+ - cd into the repository, if you're not
+ - Run the uninstall script: `./uninstall.sh`.This should remove the `~/.conky/` directory.
 
 ### References
 [Conky-Wiki](https://github.com/brndnmtthws/conky)
