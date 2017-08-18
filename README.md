@@ -7,18 +7,26 @@
 
 </div>
 
-### Install and run
+### Install
 
   - First install conky following the reference guide below or from the [link here](https://www.shellhacks.com/install-configure-conky-linux-mint-ubuntu-debian/) and check if the default conky works for you.
   - Then clone the repository: `https://github.com/nobodyme/conky-fsociety.git`
   - cd into the directory: `cd conky-fsociety`
-  - Run the install script with: `./install.sh`.This should place the necessary files under `~/.conky/conky-fsociety/` and run the conky.
-  - Now although your conky will persist even if you close the terminal, it wouldn't be present on reboot, see [how to set up conky to run at startup](https://www.shellhacks.com/install-configure-conky-linux-mint-ubuntu-debian/) at the end of that page.
+  - Run the install script with: `./install.sh`.This should place the necessary files under `~/.conky/conky-fsociety/`
   
-### Uninstallation
+### Run
+	
+To run the conky: `conky -c ~/.conky/conky-fsociety/fsocietyrc`
+
+Note: Although your conky will persist even if you close the terminal, it wouldn't be present on reboot, see [how to set up conky to run at startup](https://www.shellhacks.com/install-configure-conky-linux-mint-ubuntu-debian/) at the end of that page.
+
+### Remove 
+
+To remove the conky: `pkill conky`
+  
+### Uninstall
 
  - cd into the repository, if you're not
  - Run the uninstall script: `./uninstall.sh`.This should remove the `~/.conky/` directory.
-
 ### References
 [Conky-Wiki](https://github.com/brndnmtthws/conky)

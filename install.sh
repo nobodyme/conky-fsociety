@@ -9,6 +9,5 @@ if [[ "$answer" == [Yy] ]]; then
 	cp fsocietyrc ~/.conky/conky-fsociety > /dev/null 2>&1
 	cp mr.robot.png ~/.conky/conky-fsociety > /dev/null 2>&1
 	cp clocks.lua ~/.conky/conky-fsociety > /dev/null 2>&1
-	conky -c ~/.conky/conky-fsociety/fsocietyrc
 	echo "Success"
 fi
