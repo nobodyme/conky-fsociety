@@ -9,7 +9,7 @@
 
 ### Install and run
 
-  - First install conky following the reference guide below or from the [link here](https://www.shellhacks.com/install-configure-conky-linux-mint-ubuntu-debian/)
+  - First install conky following the reference guide below or from the [link here](https://www.shellhacks.com/install-configure-conky-linux-mint-ubuntu-debian/) and check if the default conky works for you.
   - Then clone the repository: `https://github.com/nobodyme/conky-fsociety.git`
   - cd into the directory: `cd conky-fsociety`
   - Run the install script with: `./install.sh`.This should place the necessary files under `~/.conky/conky-fsociety/` and run the conky.
