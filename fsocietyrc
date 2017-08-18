@@ -15,38 +15,35 @@
 
  #Window specifications
 	    own_window yes
-      own_window_type normal
+      own_window_type conky
       own_window_argb_visual yes
-      own_window_argb_value 0
+      own_window_argb_value 225
 	    own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
 	    border_inner_margin 50
-	    border_outer_margin 
-
-  #minimum_size 1100 700
+	    border_outer_margin
+	    own_window_transparent yes
+	    own_window_colour black
+	    minimum_size 400 700
 	    maximum_width 700
 	    alignment top_right
 	    gap_x 0
 	    gap_y 90
 
-  #Graphics settings
+ #Graphics settings
 	    draw_shades no
 	    draw_outline no
 	    draw_borders no
 	    draw_graph_borders no
 
-  #Text settings
-	    use_xft true
+ #Text settings
+	    use_xft yes
 	    font Ubuntu Mono:size=10
 	    xftalpha 0.8
 		  uppercase no
 		  default_color white
 
-  #own_window_transparent yes
-	    own_window_colour black
-	    minimum_size 400 700
-
-  #CORRECT THIS PATH IF NOT WORKING
+ #CORRECT THIS PATH IF NOT WORKING
       lua_load ~/.conky/conky-fsociety/clocks.lua
       lua_draw_hook_pre clock_rings
 
