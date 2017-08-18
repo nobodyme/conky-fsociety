@@ -5,6 +5,8 @@
 
 <img src="https://github.com/nobodyme/conky-fsociety/blob/master/screenshot-desktop.png">
 
+Tested on cinnamon
+
 </div>
 
 ### Install
@@ -28,5 +30,6 @@ To remove the conky: `pkill conky`
 
  - cd into the repository, if you're not
  - Run the uninstall script: `./uninstall.sh`.This should remove the `~/.conky/` directory.
-### References
-[Conky-Wiki](https://github.com/brndnmtthws/conky)
+
+### Other references
+[Conky-Wiki-github](https://github.com/brndnmtthws/conky/wiki)

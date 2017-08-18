@@ -136,6 +136,7 @@ function rgb_to_r_g_b(colour,alpha)
   return ((colour / 0x10000) % 0x100) / 255., ((colour / 0x100) % 0x100) / 255., (colour % 0x100) / 255., alpha
 end
 
+--parse in arguments as so (cr, scaling value, settings_table[i]_ that is to be drawn)
 function draw_ring(cr,t,pt)
   local w,h=conky_window.width,conky_window.height
 
@@ -218,11 +219,13 @@ function DrawBars (cr,start_x,start_y,bar_width,bar_height,corenum,r,g,b)
   cairo_rectangle (cr,start_x,start_y,bar_width,-bar_height)
   cairo_fill(cr)
   cairo_set_source_rgba(cr,r,g,b,1)
+  
   if corenum == 1 then
-  value = tonumber(conky_parse("${cpu cpu1}"))
+   value = tonumber(conky_parse("${cpu cpu1}"))
   else
-  value = tonumber(conky_parse("${cpu cpu2}"))
+   value = tonumber(conky_parse("${cpu cpu2}"))
   end
+  
   max_value=100
   scale=bar_height/max_value
   indicator_height=scale*value
@@ -264,12 +267,17 @@ function conky_clock_rings()
   end
 
   pct=value/pt['max']
+  --parse in arguments as so (cr, scaling value, settings_table[i]_ that is to be drawn)
   draw_ring(cr,pct,pt)
 end
 
---Check that Conky has been running for at least 5s
+--Check that Conky has been running for at least 5s -- boilerplate code
   if conky_window==nil then return end
-  local cs=cairo_xlib_surface_create(conky_window.display,conky_window.drawable,conky_window.visual, conky_window.width,conky_window.height)
+  local cs=cairo_xlib_surface_create(conky_window.display,
+                                     conky_window.drawable,
+                                     conky_window.visual, 
+                                     conky_window.width,
+                                     conky_window.height)
 
   local cr=cairo_create(cs)
 
