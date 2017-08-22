@@ -4,7 +4,7 @@
 
 [Conky](https://wiki.archlinux.org/index.php/conky)(a light weight system monitoring tool) for desktop
 
-<img src="https://github.com/nobodyme/conky-fsociety/blob/master/screenshot-desktop.png">
+<img src="https://github.com/nobodyme/conky-fsociety/blob/reddit-addition/screenshot-desktop.png">
 
 Tested on cinnamon
 

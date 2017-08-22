@@ -6,8 +6,7 @@ if [[ "$answer" == [Yy] ]]; then
 	pkill conky
 	mkdir ~/.conky > /dev/null 2>&1
 	mkdir ~/.conky/conky-fsociety/ > /dev/null 2>&1
-	cp fsocietyrc ~/.conky/conky-fsociety > /dev/null 2>&1
-	cp mr.robot.png ~/.conky/conky-fsociety > /dev/null 2>&1
-	cp clocks.lua ~/.conky/conky-fsociety > /dev/null 2>&1
+	cp {fsocietyrc,mr.robot.png,clocks.lua,reddit.py,posts.txt} ~/.conky/conky-fsociety > /dev/null 2>&1
+	touch ~/.conky/conky-fsociety/posts.txt
 	echo "Success"
 fi

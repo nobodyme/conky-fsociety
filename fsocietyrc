@@ -77,6 +77,11 @@
   ${offset 221}${top_mem name 3}${alignr}${top mem 3} %
   ${offset 221}${top_mem name 4}${alignr}${top mem 4} %
 
+${exec python3 ~/.conky/conky-fsociety/reddit.py showerthoughts}
+${alignc}${exec cat ~/.conky/conky-fsociety/posts.txt  \
+                                | fold -s -w 60 }
+  
+
 
   ##${offset 205}${voffset 17}${color #ffffff}${font Roboto-Bold:size=14}AUDACIOUS
   ##${offset 120}${color #ad1a26}${font Roboto-Bold:size=9}${audacious_title 30} ${audacious_position}/${audacious_length}
