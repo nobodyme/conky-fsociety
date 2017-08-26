@@ -1,6 +1,6 @@
 <div align="center">
 
-# Conky-fsociety
+# Conky-mr-robot
 
 [Conky](https://wiki.archlinux.org/index.php/conky)(a light weight system monitoring tool) for desktop
 
