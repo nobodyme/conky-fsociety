@@ -13,7 +13,7 @@ Tested on cinnamon
 ### Install
 
   - First install conky following the reference guide below or from the [link here](https://www.shellhacks.com/install-configure-conky-linux-mint-ubuntu-debian/) and check if the default conky works for you.
-  - Then clone the repository: `https://github.com/nobodyme/conky-fsociety.git`
+  - Then clone the repository: `git clone https://github.com/nobodyme/conky-fsociety.git`
   - cd into the directory: `cd conky-fsociety`
   - Run the install script with: `./install.sh`.This should place the necessary files under `~/.conky/conky-fsociety/`
   
@@ -25,7 +25,7 @@ Note: Although your conky will persist even if you close the terminal, it wouldn
 
 ### Remove 
 
-To remove the conky: `pkill conky`
+To remove the conky from desktop: `pkill conky`
   
 ### Uninstall
 
