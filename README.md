@@ -32,5 +32,8 @@ To remove the conky from desktop: `pkill conky`
  - cd into the repository, if you're not
  - Run the uninstall script: `./uninstall.sh`.This should remove the `~/.conky/` directory.
 
+### Known issues
+  - For Unity DE you might wanna change the line `own_window_type normal` to `own_window_type dock` in fscoietyrc file in `~/.conky/conky-fscoiety/fsocietyrc` after install, if you don't find the conky appearing on the desktop.
+
 ### Other references
 [Conky-Wiki-github](https://github.com/brndnmtthws/conky/wiki)
